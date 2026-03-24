@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Assembly Of Nations</title>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar__brand">
+      <img src="aon26_logo.png" alt="AON" class="navbar__logo">
+    </a>
+    <ul class="navbar__links">
+      <li><a href="index.html" class="nav__link"><span>Home</span></a></li>
+      <li><a href="about.html" class="nav__link"><span>About</span></a></li>
+      <li><a href="sec.html" class="nav__link"><span>Secretariat</span></a></li>
+      <li><a href="committee.html" class="nav__link"><span>Committees</span></a></li>
+      <li><a href="publications.html" class="nav__link"><span>Publications</span></a></li>
+      <li><a href="support.html" class="nav__link nav__link--cta"><span>Support</span></a></li>
+    </ul>
+    <div class="navbar__toggle" id="nav-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="navbar__drawer" id="nav-drawer">
+    <div class="navbar__drawer-close" id="nav-close">&#x2715;</div>
+    <a href="index.html" class="navbar__drawer-brand">
+      <img src="aon26_logo.png" alt="AON" class="navbar__drawer-logo">
+    </a>
+    <ul class="navbar__drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="sec.html">Secretariat</a></li>
+      <li><a href="committee.html">Committees</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="support.html" class="nav__link--cta">Support</a></li>
+    </ul>
+  </div>
+  <div class="navbar__overlay" id="nav-overlay"></div>
+
+  <section id="committees">
+    <h2 class="committees__heading">Committees</h2>
+    <div class="committees__grid">
+
+      <button class="committee-card" id="btn-unsc">
+        <img src="aon26_logo.png" alt="AON" class="committee-card__logo">
+        <span class="committee-card__title">UNSC</span>
+        <span class="committee-card__full">United Nations Security Council</span>
+      </button>
+
+      <button class="committee-card" id="btn-specpol">
+        <img src="aon26_logo.png" alt="AON" class="committee-card__logo">
+        <span class="committee-card__title">UNGA-SPECPOL</span>
+        <span class="committee-card__full">Special Political and Decolonization Committee</span>
+      </button>
+
+      <button class="committee-card" id="btn-c34">
+        <img src="aon26_logo.png" alt="AON" class="committee-card__logo">
+        <span class="committee-card__title">C-34</span>
+        <span class="committee-card__full">Special Committee on Peacekeeping Operations</span>
+      </button>
+
+    </div>
+  </section>
+
+  <div class="popup__overlay" id="popup-overlay">
+    <div class="popup__box">
+      <button class="popup__close" id="popup-close">&#x2715;</button>
+      <p class="popup__committee-tag" id="popup-tag"></p>
+      <h2 class="popup__title">Agenda</h2>
+      <p class="popup__text" id="popup-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer class="footer">
+    <div class="footer__main">
+      <div class="footer__brand">
+        <img src="cbs_logo.png" alt="CBS" class="footer__logo">
+        <p class="footer__school">Calcutta Boys' School</p>
+        <a href="https://calcuttaboysschool.edu.in/" target="_blank" class="footer__school-link">calcuttaboysschool.edu.in ↗</a>
+      </div>
+      <div class="footer__links">
+        <p class="footer__links-title">Quick Links</p>
+        <a href="support.html" class="footer__link">Support</a>
+        <a href="resources.html" class="footer__link">Resources</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__made">Made by
+        <a href="https://github.com/fah3m" target="_blank" class="footer__dev">Fahim</a>
+        &amp;
+        <a href="https://github.com/s6aunak" target="_blank" class="footer__dev">Shaunak</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>

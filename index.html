@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <title>Assembly Of Nations 2026</title>
+</head>
+<body>
+
+  <div id="load-landing">
+    <h1 id="landingText"></h1>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="navbar__brand">
+      <img src="aon26_logo.png" alt="AON" class="navbar__logo">
+    </a>
+    <ul class="navbar__links">
+      <li><a href="index.html" class="nav__link"><span>Home</span></a></li>
+      <li><a href="about.html" class="nav__link"><span>About</span></a></li>
+      <li><a href="sec.html" class="nav__link"><span>Secretariat</span></a></li>
+      <li><a href="committee.html" class="nav__link"><span>Committees</span></a></li>
+      <li><a href="publications.html" class="nav__link"><span>Publications</span></a></li>
+      <li><a href="support.html" class="nav__link nav__link--cta"><span>Support</span></a></li>
+    </ul>
+    <div class="navbar__toggle" id="nav-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="navbar__drawer" id="nav-drawer">
+    <div class="navbar__drawer-close" id="nav-close">&#x2715;</div>
+    <a href="index.html" class="navbar__drawer-brand">
+      <img src="aon26_logo.png" alt="AON" class="navbar__drawer-logo">
+    </a>
+    <ul class="navbar__drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="sec.html">Secretariat</a></li>
+      <li><a href="committee.html">Committees</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="support.html" class="nav__link--cta">Support</a></li>
+    </ul>
+  </div>
+  <div class="navbar__overlay" id="nav-overlay"></div>
+
+  <section class="hero">
+    <div class="hero__orbs">
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+    </div>
+    <div class="hero__particles" id="particles"></div>
+
+    <div class="hero__content">
+      <p class="hero__tag"> Calcutta Boys' School Presents </p>
+      <h1 class="hero__title">Assembly<br><span>of Nations</span></h1>
+      <div class="hero__meta">
+        <span class="hero__year">2026</span>
+        <span class="hero__sep">|</span>
+        <span class="hero__motto">Renascentia De Legatum</span>
+      </div>
+      <div class="hero__date"> 29th &amp; 30th June </div>
+      <div class="countdown__wrapper">
+        <div class="countdown__item">
+          <span class="countdown__num" id="cd-days">00</span>
+          <span class="countdown__label">Days</span>
+        </div>
+        <div class="countdown__sep">:</div>
+        <div class="countdown__item">
+          <span class="countdown__num" id="cd-hours">00</span>
+          <span class="countdown__label">Hours</span>
+        </div>
+        <div class="countdown__sep">:</div>
+        <div class="countdown__item">
+          <span class="countdown__num" id="cd-mins">00</span>
+          <span class="countdown__label">Mins</span>
+        </div>
+        <div class="countdown__sep">:</div>
+        <div class="countdown__item">
+          <span class="countdown__num" id="cd-secs">00</span>
+          <span class="countdown__label">Secs</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__emblem-wrap">
+      <img src="aon26_logo.png" alt="" class="hero__emblem">
+      <div class="hero__ring hero__ring--1"></div>
+      <div class="hero__ring hero__ring--2"></div>
+      <div class="hero__ring hero__ring--3"></div>
+    </div>
+
+  </section>
+
+  <section class="about-preview">
+    
+    <h2 class="section__title">We Are<br><span>Back</span></h2>
+    <p class="section__body">This time CBS AON is back with its 6th edition with powerful exciting committees, dynamic discussions, and the same passion for diplomacy!</p>
+    <div class="stat-row">
+      <div class="stat-card">
+        <span class="stat-card__num">6th</span>
+        <span class="stat-card__label">Edition</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__num">2 days</span>
+        <span class="stat-card__label">of conference</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card__num">3</span>
+        <span class="stat-card__label">Committees</span>
+      </div>
+    </div>
+    <div class="about-preview__links">
+  <button class="pill-btn" id="btn-cbs">About CBS</button>
+  <button class="pill-btn pill-btn--outline" id="btn-aon">About AON</button>
+</div>
+  </section>
+
+<section class="gallery-preview">
+  <h2 class="section__title">MOMENTS FROM<span> AON 25</span></h2>
+  <div class="gallery-slider">
+    <button class="gallery-arrow gallery-arrow--left" id="gallery-prev">&#8592;</button>
+    <div class="gallery-slide" id="gallery-slide"></div>
+    <button class="gallery-arrow gallery-arrow--right" id="gallery-next">&#8594;</button>
+    <div class="gallery-dots" id="gallery-dots"></div>
+  </div>
+</section>
+<div class="popup__overlay" id="popup-overlay">
+  <div class="popup__box">
+    <button class="popup__close" id="popup-close">&#x2715;</button>
+    <h2 class="popup__title" id="popup-title"></h2>
+    <p class="popup__text" id="popup-text"></p>
+  </div>
+</div>
+  <script src="script.js"></script>
+  <footer class="footer">
+  <div class="footer__main">
+    <div class="footer__brand">
+<img src="cbs_logo.png" alt="CBS" class="footer__logo">      <p class="footer__school">Calcutta Boys' School</p>
+      <a href="https://calcuttaboysschool.edu.in/" target="_blank" class="footer__school-link">calcuttaboysschool.edu.in ↗</a>
+    </div>
+    <div class="footer__links">
+      <p class="footer__links-title">Quick Links</p>
+      <a href="support.html" class="footer__link">Support</a>
+      <a href="resources.html" class="footer__link">Resources</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__made">Made by
+      <a href="https://github.com/fah3m" target="_blank" class="footer__dev">Fahim</a>
+      &amp;
+      <a href="https://github.com/s6aunak" target="_blank" class="footer__dev">Shaunak</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
